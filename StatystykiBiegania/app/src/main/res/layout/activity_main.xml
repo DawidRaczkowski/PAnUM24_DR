@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:gravity="center">
+
+
+        <EditText
+            android:id="@+id/inputTempo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Tempo (min/km)"
+            android:inputType="numberDecimal"
+            android:layout_marginBottom="12dp" />
+
+        <Button
+            android:id="@+id/buttonFromTempo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Oblicz na podstawie tempa"
+            android:layout_marginBottom="16dp" />
+
+
+        <EditText
+            android:id="@+id/inputSpeed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Prędkość (km/h)"
+            android:inputType="numberDecimal"
+            android:layout_marginBottom="12dp" />
+
+        <Button
+            android:id="@+id/buttonFromSpeed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Oblicz na podstawie prędkości"
+            android:layout_marginBottom="16dp" />
+
+
+        <EditText
+            android:id="@+id/inputDistance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Dystans (km)"
+            android:inputType="numberDecimal"
+            android:layout_marginBottom="8dp" />
+
+        <EditText
+            android:id="@+id/inputTimeHours"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Czas (godziny)"
+            android:inputType="number"
+            android:layout_marginBottom="4dp" />
+
+        <EditText
+            android:id="@+id/inputTimeMinutes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Czas (minuty)"
+            android:inputType="number"
+            android:layout_marginBottom="4dp" />
+
+        <EditText
+            android:id="@+id/inputTimeSeconds"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Czas (sekundy)"
+            android:inputType="number"
+            android:layout_marginBottom="12dp" />
+
+        <Button
+            android:id="@+id/buttonFromTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Oblicz wymagane tempo i prędkość"
+            android:layout_marginBottom="16dp" />
+
+
+        <TextView
+            android:id="@+id/resultText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Wynik:"
+            android:textSize="16sp"
+            android:paddingTop="16dp" />
+
+    </LinearLayout>
+</ScrollView>
